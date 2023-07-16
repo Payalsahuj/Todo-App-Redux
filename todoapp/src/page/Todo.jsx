@@ -101,14 +101,14 @@ export const Todo = () => {
     }
     
     return <Box height={'100vh'} >
-        <Box h={'30%'} w={'100%'}  backgroundColor={'#7E57C2'}>
+        <Box h={'30%'} w={'100%'}  backgroundColor={'#141a58'}>
         </Box>
         <Box h={'70%'} w={'100%'} backgroundColor={'#ECEFF1'}>
             <Box height={'80%'} width={'70%'} position={'absolute'} top={'10%'} left={'15%'}>
                 <Box height={'13%'} width={'100%'}  display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
                     <Heading as={'h1'} color={'white'}>TODO</Heading>
 
-                    <MoonIcon color={'white'} />
+                    {/* <MoonIcon color={'white'} /> */}
                 </Box>
                 <Box margin={'auto'} marginBottom={'1%'} display={'flex'}  >
                     <Input placeholder='Add the Task' backgroundColor={'white'}  borderColor={'transparent'} onChange={(e) => settask(e.target.value)} value={task} size='md' borderRadius={'7px 0px 0px 7px'} />
